@@ -34,7 +34,7 @@ if a=="E":
  print('Actualizar Debian,instalar los componentes luego instalar LXDE')
  print('Por ultimo Iniciar LXDE, luego abrir la aplicacion Xserver')
  print('y esta todo LISTO!!!')
-else
+else:
  print('Opcion invalida')
 
 print('*************')
