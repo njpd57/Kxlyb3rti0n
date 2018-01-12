@@ -13,6 +13,7 @@ print('-B = Instalar LXDE')
 print('-C = Ejecutar LXDE')
 print('-D = Actualizar Debian')
 print('-E = Instrucciones')
+print('-F = Instalar LXDE-Core')
 print('')
 a=input("Selecciona una opcion: ")
 if a=="A":
@@ -34,9 +35,12 @@ if a=="E":
  print('Actualizar Debian,instalar los componentes luego instalar LXDE')
  print('Por ultimo Iniciar LXDE, luego abrir la aplicacion Xserver')
  print('y esta todo LISTO!!!')
-else:
- print('Opcion invalida')
-
+if a=="F":
+	print('LXDE-Core es una version mas liviana que solo cuenta con')
+	print('el entorno de escritorio LXDE')
+	os.system('apt-get install lxde-core')
+	print('Listo ya puedes ejecutar LXDE en XSERVER')
+    		 
 print('*************')
 print('*KXLYB3RTI0N*')
 print('*************')
